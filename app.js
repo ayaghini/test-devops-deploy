@@ -1,6 +1,16 @@
 //npm i
 //node app.js
 //git init
+//git branch -M master
+//git add -A
+//git status
+//git commit -m "first commit"
+//after creatting the repo on github.com: git remote add origin https://github.com/ayaghini/test-devops-deploy.git
+//then: git push -u origin master
+//render.com
+//npm install cors
+
+
 
 require('dotenv').config();
 
@@ -8,12 +18,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
 const schema = require("./models/bookSchema");
+const cors = require("cors");
 
 const Book = schema.Book;
 const Author = schema.Author;
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 // app.use(express.json());
 
 const PORT = 3000
