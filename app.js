@@ -10,6 +10,12 @@
 //render.com
 //npm install cors
 
+//everytime add some commit:
+//git add -A
+//git status
+//git commit -m "first commit"
+//git push origin master
+
 
 
 require('dotenv').config();
