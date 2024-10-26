@@ -33,7 +33,7 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/lesson8mongoose:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/lesson8mongoose:latest
           build-args:
             MONGO_URI=${{ secrets.MONGO_URI }}
 
